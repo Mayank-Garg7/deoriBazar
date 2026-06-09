@@ -1,0 +1,1 @@
+print("welcome in backend of deoriBazar")
