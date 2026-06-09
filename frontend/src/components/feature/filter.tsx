@@ -1,6 +1,6 @@
 import React from 'react'
 
-function filter() {
+function Filter() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function filter() {
   )
 }
 
-export default filter
+export default Filter
