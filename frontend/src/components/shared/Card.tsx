@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { type ReactNode } from "react";
 
 
-const ChildrenType = {
-  children: Node || HTMLElement,
-}
-function Card({children : ChildrenType}) {
+
+type ChildrenType = {
+  children: ReactNode;
+};
+function Card({children} : ChildrenType) {
   return (
-    <div className=''>
+    <div className='border-2 px-5 py-3 w-ful rounded-lg'>
       {children}
     </div>
   )
