@@ -1,9 +1,13 @@
 import React from 'react'
 
-function Card() {
+
+const ChildrenType = {
+  children: Node || HTMLElement,
+}
+function Card({children : ChildrenType}) {
   return (
-    <div>
-      
+    <div className=''>
+      {children}
     </div>
   )
 }
