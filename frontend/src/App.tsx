@@ -1,17 +1,17 @@
-import Card from "./components/shared/Card";
-import {BrowswerRouter as Router}
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
 const App = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-teal-200">
-      <Card >
-        <h1 className="text-3xl font-bold text-blue-600">
-          Welcome to Deori Bazar
-        </h1>
-        <p className="mt-4 text-gray-600">Your local marketplace platform.</p>
-
-      </Card>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 };
 
